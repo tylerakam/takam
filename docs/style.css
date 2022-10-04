@@ -11,6 +11,10 @@ body {
     text-align: center;
     padding: 10px
 }
+hr {
+    height: 2em;
+    color: purple
+}
 section {
     color: black;
     background-color: lime;
