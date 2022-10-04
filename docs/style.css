@@ -1,6 +1,6 @@
 h1 {
     color: black;
-    background-color: lime;
+    background-color: lightcoral;
     font-family: courier, fixed, monospace;
     text-align: center
 }
@@ -21,7 +21,7 @@ hr {
 }
 section {
     color: black;
-    background-color: lime;
+    background-color: lightcoral;
     font-family: monospace;
     text-align: center
 }
