@@ -6,7 +6,7 @@ h1 {
 }
 body {
     color: black;
-    background-color: aqua;
+    background-color: lightcoral;
     font-family: monospace;
     text-align: center;
     padding: 10px;
@@ -26,7 +26,7 @@ section {
 }
 h2 {
     color: black;
-    background-color:blue;
+    background-color: #20B2AA;
     font-family:courier, fixed, monospace;
     text-align: center
 }
