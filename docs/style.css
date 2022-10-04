@@ -1,3 +1,25 @@
-h1{color:black;background-color:lime;font-family:courier, fixed, monospace;text-align:center}
-body {color:black;background-color:aqua;font-family:monospace;text-align:center}
-section {color:black; background-color:lime;font-family:monospace;text-align:center}
+h1 {
+    color: black;
+    background-color: lime;
+    font-family: courier, fixed, monospace;
+    text-align: center
+}
+body {
+    color: black;
+    background-color: aqua;
+    font-family: monospace;
+    text-align: center;
+    padding: 10px
+}
+section {
+    color: black;
+    background-color: lime;
+    font-family: monospace;
+    text-align: center
+}
+h2 {
+    color: black;
+    background-color:blue;
+    font-family:courier, fixed, monospace;
+    text-align: center
+}
