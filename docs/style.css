@@ -10,6 +10,7 @@ body {
     font-family: monospace;
     text-align: center;
     padding: 10px;
+    border: 1px;
     border-style: double
 }
 hr {
@@ -31,5 +32,6 @@ h2 {
     text-align: center
 }
 iframe{
+    border: 1px;
     border-style: double
 }
