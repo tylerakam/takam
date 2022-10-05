@@ -35,19 +35,13 @@ iframe{
     border: 2px;
     border-style: double
 }
-ul.nav {
-  padding-left: 0px;
-  background-color: #3D99CE;
-  text-align: center;
+div {
+    border:2px;
+    border-style:dashed;
+    color: black;
+    background-color: #20B2AA
 }
-ul.nav > li {
-  display: inline-block;
-  padding: 10px 20px;
-}
-ul.nav > li:hover {
-  background-color: #2779BF;
-}
-ul.nav > li > a {
-  color: white;
-  text-decoration: none;
+ul {list-style:n;
+    text-align:center
+    
 }
