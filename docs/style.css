@@ -41,7 +41,7 @@ div {
     color: black;
     background-color: #20B2AA
 }
-ul {list-style:n;
+ul {list-style:horizontal;
     text-align:center
     
 }
