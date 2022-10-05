@@ -9,14 +9,14 @@ body {
     background-color: lightcoral;
     font-family: monospace;
     text-align: center;
-    padding: 10px;
-    border: 1px;
+    padding: 25px;
+    border: 2px;
     border-style: double
 }
 hr {
     height: 2em;
     color: black;
-    background-color: purple;
+    background-color: coral;
     
 }
 section {
@@ -32,6 +32,6 @@ h2 {
     text-align: center
 }
 iframe{
-    border: 1px;
+    border: 2px;
     border-style: double
 }
