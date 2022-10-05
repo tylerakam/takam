@@ -54,3 +54,9 @@ a {
   padding: 8px;
   background-color: #20B2AA
   }
+  figcaption{
+  font-family:monospace;
+  color: black;
+  background-color:#20B2AA;
+  border:2px
+  }
