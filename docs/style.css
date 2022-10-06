@@ -55,6 +55,12 @@ a {
   padding: 8px;
   background-color: #20B2AA
   }
+  figure{
+  border: double;
+  border-width:4px;
+  background-color:darkslateblue;
+  
+  }
   figcaption{
   font-family:monospace;
   color: black;
