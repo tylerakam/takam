@@ -36,18 +36,18 @@ iframe{
     border-style: double
 }
 
-div {
+nav {
     border:2px;
     border-style:dashed;
     color: black;
     background-color: #20B2AA
 }
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-li {
+nav ul li {
   display: inline;
 }    
 a {
@@ -55,19 +55,19 @@ a {
   padding: 8px;
   background-color: #20B2AA
   }
-  figure{
+figure{
   border: double;
   border-width:4px;
   background-color:darkslateblue;
   padding:3em;
   }
-  figcaption{
+figcaption{
   font-family:monospace;
   color: black;
   background-color:#20B2AA;
   border:2px
   }
- body section.quickinfo{
+body section.quickinfo{
   background-color: lightcoral;
   
  }
