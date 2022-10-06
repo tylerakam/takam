@@ -45,10 +45,13 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 6px;
+  word-spacing: 10px;
 }
 nav ul li {
   display: inline;
+  font-size: 20px;
+  
 }    
 a {
   background-color: #20B2AA
