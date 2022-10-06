@@ -59,7 +59,7 @@ a {
   border: double;
   border-width:4px;
   background-color:darkslateblue;
-  
+  padding:3em;
   }
   figcaption{
   font-family:monospace;
