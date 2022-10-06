@@ -9,8 +9,8 @@ body {
     background-color: lightcoral;
     font-family: monospace;
     text-align: center;
-    padding: 25px;
-    border: 2px;
+    padding: 50px;
+    border: 4px;
     border-style: double
 }
 hr {
