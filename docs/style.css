@@ -51,8 +51,6 @@ nav ul li {
   display: inline;
 }    
 a {
-  display: block;
-  padding: 8px;
   background-color: #20B2AA
   }
 figure{
@@ -75,5 +73,9 @@ body section.quickinfo{
     display: flex;
     flex: 1;
     margin: auto;
-    
+
+ }
+ ol{
+   list-style-type:none;
+   
  }
