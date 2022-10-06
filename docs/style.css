@@ -35,11 +35,7 @@ iframe{
     border: 2px;
     border-style: double
 }
-nav#menu {padding:2vw; }
- 
-.button { border:2px; border-style:solid; border-color:blue; padding:2vw; background-color:#E6E6FA; color:yellow; width:10%; display:inline;
- border-radius: 20px;
- }
+
 div {
     border:2px;
     border-style:dashed;
@@ -65,3 +61,4 @@ a {
   background-color:#20B2AA;
   border:2px
   }
+  
