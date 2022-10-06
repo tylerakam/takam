@@ -71,3 +71,8 @@ a {
   background-color: lightcoral;
   
  }
+ img{
+    flex: 1;
+    margin: auto;
+    
+ }
