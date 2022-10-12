@@ -37,24 +37,35 @@ iframe{
 }
 
 nav {
-    border:2px;
-    border-style:dashed;
+    border:6px;
+    border-style:double;
     color: black;
-    background-color: #20B2AA
+    background-color: dodgerblue
 }
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 6px;
-  word-spacing: 10px;
+  padding: 20px;
+  word-spacing: 20px;
 }
 nav ul li {
   display: inline;
-  font-size: 20px;
-  
+  font-size: 20px
+}
+nav ul li a {
+  display: block;
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color:darkslateblue;
 }    
 a {
-  background-color: #20B2AA
+  
   }
 figure{
   border: double;
@@ -65,20 +76,78 @@ figure{
 figcaption{
   font-family:monospace;
   color: black;
-  background-color:#20B2AA;
-  border:2px
+  border:2px;
+  font-size: 2em;
+  padding: 3em
   }
+body section.gallery p{
+  font-size: 3em
+}
 body section.quickinfo{
   background-color: lightcoral;
   
  }
+body section.resume {
+  font-family:roman, 'times new roman', times, serif;
+  font-size: 1.3em;
+  text-align:left;
+  border: solid;
+  border-width: .5em;
+  border-color:coral;
+  padding:20px; 
+  background-color: white;
+  margin:200px
+}
+body section.resume h1{
+  text-align:left;
+  background-color: white;  
+}
+body section.resume h2 {
+  text-align:left;
+  background-color: white;
+}
+body section.about p{
+  font-size: 1.5em;
+  text-align: left;
+  padding: 1.5em;
+}
+body div.reflection p {
+  font-size:1.5em;
+  font-family:roman, 'times new roman', times, serif;
+  background-color:white;
+  text-align: left
+}
+body div.reflection h1{
+  background-color:white;
+  font-size:4em;
+  
+}
+body div.reflection{
+  border: solid;
+  border-width: .5em;
+  border-color:coral;
+  padding:20px; 
+  background-color: white;
+  margin:200px
+}
+body section.galHead p{
+  font-size:1.4em;
+    
+}
+body section.galHead h1{
+  font-size: 4em;  
+}
  img{
     display: flex;
     flex: 1;
     margin: auto;
-
+    max-width:800px;
+    width: 80%;
  }
  ol{
    list-style-type:none;
    
+ }
+ body div.page {
+     padding: 1.4em;
  }
