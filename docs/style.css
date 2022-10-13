@@ -78,13 +78,20 @@ figcaption{
   color: black;
   border:2px;
   font-size: 2em;
-  padding: 3em
+  padding: 1em; 
   }
-body section.gallery p{
-  font-size: 3em
+body section.gallery{
+  font-size: 1.5em;
+  
+  
 }
+body section.gallery p{
+  font-size: 1.5em;
+  }
 body section.quickinfo{
   background-color: lightcoral;
+  font-size: 2em;
+  
   
  }
 body section.resume {
@@ -136,6 +143,12 @@ body section.galHead p{
 }
 body section.galHead h1{
   font-size: 4em;  
+}
+section.inList ol li{
+  font-size: 2em
+}
+section.inList h2{
+  font-size: 3em
 }
  img{
     display: flex;
