@@ -164,3 +164,12 @@ section.inList h2{
  body div.page {
      padding: 1.4em;
  }
+body section.photoHead h2{
+   font-size:4em; 
+   background-image : url("reflectiontitle.jpg")
+}
+body section.photoHead{
+   background-image: url("reflectiontitle.jpg");
+   background-color: #cccccc;
+   width: 80%;
+}
