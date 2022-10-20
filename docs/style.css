@@ -166,10 +166,14 @@ section.inList h2{
  }
 body section.photoHead h2{
    font-size:4em; 
-   background-image : url("reflectiontitle.jpg")
+   background-color:transparent;
 }
 body section.photoHead{
-   background-image: url("reflectiontitle.jpg");
+   background-image:url("Pics/reflection-title.jpg");
+   /* ebb: You needed to point a relative filepath into your Pics directory, just you would to display an image on the HTML file. */
+   background-size:100%;
    background-color: #cccccc;
-   width: 80%;
+   width: 90%;
+   padding:10vw;
+  margin:auto;
 }
