@@ -118,6 +118,20 @@ body section.about p{
   text-align: left;
   padding: 1.5em;
 }
+body section.entries p{
+  margin: auto;
+  font-size: 1.5em;
+  background-color: white;
+  padding: 100px;
+}
+body section.entries img{
+  border-style: solid;
+  border-width: 1.5em;
+  
+}
+
+
+
 body div.reflection p {
   font-size:1.5em;
   font-family:roman, 'times new roman', times, serif;
@@ -174,6 +188,8 @@ body section.photoHead{
    background-size:100%;
    background-color: #cccccc;
    width: 90%;
+   max-width: 2000px;
    padding:10vw;
   margin:auto;
+  background-size: auto;
 }
