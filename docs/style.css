@@ -2,6 +2,7 @@ h1 {
     color: black;
     background-color: lightcoral;
     font-family: courier, fixed, monospace;
+    font-size: 3.5em;
     text-align: center
 }
 body {
@@ -27,7 +28,6 @@ section {
 }
 h2 {
     color: black;
-    background-color: #20B2AA;
     font-family:courier, fixed, monospace;
     text-align: center
 }
@@ -100,7 +100,7 @@ body section.resume {
   text-align:left;
   border: solid;
   border-width: .5em;
-  border-color:coral;
+  border-color:darkslateblue;
   padding:20px; 
   background-color: white;
   margin:200px
@@ -118,18 +118,34 @@ body section.about p{
   text-align: left;
   padding: 1.5em;
 }
+body section.about div figure{
+  display: flex;
+}
+body section.entries h2 {
+  font-size: 3em;
+}
+body section.entries h3 {
+  font-size:4em;
+}
 body section.entries p{
   margin: auto;
   font-size: 1.5em;
   background-color: white;
   padding: 100px;
+  border-style: solid;
+  border-width: .3em;
+  border-color: darkslateblue;
+  
 }
 body section.entries img{
   border-style: solid;
   border-width: 1.5em;
   
 }
-
+body section.entries figure div{
+  display: flex;
+  
+}
 
 
 body div.reflection p {
@@ -146,7 +162,7 @@ body div.reflection h1{
 body div.reflection{
   border: solid;
   border-width: .5em;
-  border-color:coral;
+  border-color:darkslateblue;
   padding:20px; 
   background-color: white;
   margin:200px
@@ -157,6 +173,9 @@ body section.galHead p{
 }
 body section.galHead h1{
   font-size: 4em;  
+}
+body section.gallery div {
+  display: flex;
 }
 section.inList ol li{
   font-size: 2em
