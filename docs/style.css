@@ -70,9 +70,14 @@ a {
 figure{
   border: double;
   border-width:4px;
-  background-color:darkslateblue;
+  background-color:cornflowerblue;
   padding:3em;
   }
+figure.entry-resize img{
+  width: 110%;
+  height: auto;
+  max-width: 5000px;
+}
 figcaption{
   font-family:monospace;
   color: black;
@@ -134,7 +139,7 @@ body section.entries p{
   padding: 100px;
   border-style: solid;
   border-width: .3em;
-  border-color: darkslateblue;
+  border-color: cornflowerblue;
   text-align: left;
   
 }
