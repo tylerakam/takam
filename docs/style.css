@@ -74,7 +74,7 @@ figure{
   padding:3em;
   }
 figure.entry-resize img{
-  width: 110%;
+  width: 90%;
   height: auto;
   max-width: 5000px;
 }
