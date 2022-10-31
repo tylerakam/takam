@@ -1,2 +1,2 @@
 # takam
-intro to digit 100
+Everything is available to see at my site here: https://tylerakam.github.io/takam/index.html 
