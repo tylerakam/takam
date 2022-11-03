@@ -79,7 +79,7 @@ figure.entry-resize img{
   max-width: 5000px;
 }
 figcaption{
-  font-family:monospace;
+  font-family:roman, 'times new roman', times, serif;
   color: black;
   border:2px;
   font-size: 2em;
@@ -135,6 +135,7 @@ body section.entries h3 {
 body section.entries p{
   margin: auto;
   font-size: 2em;
+  font-family:roman, 'times new roman', times, serif;
   background-color: white;
   padding: 100px;
   border-style: solid;
