@@ -35,6 +35,12 @@ iframe{
     border: 2px;
     border-style: double
 }
+div.time iframe {
+    width:1440px;
+    border:4em;
+    max-width:200%;
+    height: 1080px;
+}
 
 nav {
     border:6px;
