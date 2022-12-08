@@ -202,10 +202,40 @@ section.inList h2{
 section.intro p {
   font-size: 2.5em;
 }
-
-
-
-
+section.kumu p{
+  font-size:1.5em;
+  font-family:roman, 'times new roman', times, serif;
+  background-color:white;
+  text-align: left;
+  padding: 20px;
+}
+section.review p{
+  font-size:1.5em;
+  font-family:roman, 'times new roman', times, serif;
+  background-color:white;
+  text-align: left;
+  padding: 20px;
+}
+section.review {
+    background-color:white;
+    border-radius:20px;
+    border-style:solid;
+    border-color:white;
+    padding:20px;
+}
+section.kumu {
+    background-color:white;
+    border-radius:20px;
+    border-style:solid;
+    border-color:white;
+    padding:20px;
+}
+section.kumu h1{
+    background-color:white;
+}
+section.review h1{
+    background-color:white;
+}
  img{
     display: flex;
     flex: 1;
@@ -234,4 +264,8 @@ body section.photoHead{
    padding:10vw;
   margin:auto;
   background-size: auto;
+}
+a.license{
+    max-width: 20px;
+    width:50%;
 }
