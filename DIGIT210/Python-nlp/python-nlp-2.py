@@ -18,14 +18,14 @@ print(CollPath)
 def readTextFiles(filepath):
     with open(filepath, 'r', encoding='utf8') as f:
         readFile = f.read()
-        print(readFile)
+        # print(readFile)
         stringFile = str(readFile)
         lengthFile = len(readFile)
         print(lengthFile)
 
         tokens = nlp(stringFile)
         vectors = tokens.vector
-        wordOfInterest = nlp(u'fry')
+        wordOfInterest = nlp(u' crash')
         print(wordOfInterest, ': ', wordOfInterest.vector_norm)
 
         highSimilarityDict = {}
@@ -33,7 +33,8 @@ def readTextFiles(filepath):
             if token and token.vector_norm:
                 if wordOfInterest.similarity(token) > .3:
                     highSimilarityDict[token] = wordOfInterest.similarity(token)
-                    print(token.text, "about this much similar to", wordOfInterest, ": ", wordOfInterest.similarity(token))
+                print(token.text, "about this much similar to", wordOfInterest, ": ",
+                          wordOfInterest.similarity(token))
         print("This is a dictionary of words most similar to the word" + wordOfInterest.text + " in this file.")
         print(highSimilarityDict)
 
@@ -44,9 +45,13 @@ def readTextFiles(filepath):
         print(highSimilarityReduced)
         print(len(highSimilarityReduced.items()), " vs ", len(highSimilarityDict.items()))
 
-# sort
+    sorted_dict = sorted(highSimilarityDict.items(), key=lambda x:x[1], reverse=True)
+    converted_dict = dict(sorted_dict)
+    print(converted_dict)
 
-    for file in os.listdir(CollPath):
-        if file.endswith(".txt"):
-            filepath = f"{CollPath}/{file}"
+
+for file in os.listdir(CollPath):
+    if file.endswith(".txt"):
+        filepath = f"{CollPath}/{file}"
         print(filepath)
+        readTextFiles(filepath)
