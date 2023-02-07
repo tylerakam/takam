@@ -33,17 +33,17 @@ def readTextFiles(filepath):
             if token and token.vector_norm:
                 if wordOfInterest.similarity(token) > .3:
                     highSimilarityDict[token] = wordOfInterest.similarity(token)
-                print(token.text, "about this much similar to", wordOfInterest, ": ",
-                          wordOfInterest.similarity(token))
-        print("This is a dictionary of words most similar to the word" + wordOfInterest.text + " in this file.")
-        print(highSimilarityDict)
+               # print(token.text, "about this much similar to", wordOfInterest, ": ",
+               #           wordOfInterest.similarity(token))
+       # print("This is a dictionary of words most similar to the word" + wordOfInterest.text + " in this file.")
+       # print(highSimilarityDict)
 
         highSimilarityReduced = {}
         for key, value in highSimilarityDict.items():
             if value not in highSimilarityReduced.values():
                 highSimilarityReduced[key] = value
-        print(highSimilarityReduced)
-        print(len(highSimilarityReduced.items()), " vs ", len(highSimilarityDict.items()))
+      #  print(highSimilarityReduced)
+      #  print(len(highSimilarityReduced.items()), " vs ", len(highSimilarityDict.items()))
 
     sorted_dict = sorted(highSimilarityDict.items(), key=lambda x:x[1], reverse=True)
     converted_dict = dict(sorted_dict)
