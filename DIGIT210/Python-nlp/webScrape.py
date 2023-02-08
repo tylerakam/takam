@@ -8,6 +8,7 @@ import os
 
 # ebb: This variable stores the website address that you want to scrape.
 archive_url = "http://www.textfiles.com/music/PINKFLOYD/"
+# archive_url = "https://www.cs.cmu.edu/~spok/grimmtmp/"
 
 def get_scripts():
     # create response object
@@ -28,36 +29,37 @@ def get_scripts():
     links = soup.findAll('a')
     hrefs = [archive_url + link['href'] for link in links]
     print(hrefs)
-    download_links(hrefs)
+    for href in hrefs:
+        download_links(href)
     print("Lyrics Downloaded")
     # ebb: After class I realized the print line indicating
     # all files downloaded needed to go after THIS loop finished.
     # Do you see why it makes sense and works here?
     # Hint: it has to do with when we call the function download_links(href)
-def download_links(hrefs):
+def download_links(href):
     # obtain filename by splitting url and getting last string
-    print(hrefs)
-    for href in hrefs:
-        file_name = href.split('/')[-1]
-        print("Downloading file: " + file_name)
+    print(href)
+
+    file_name = href.split('/')[-1]
+    print("Downloading file: " + file_name)
 
     # create response object
-        r = requests.get(href, stream = True)
+    r = requests.get(href, stream = True)
 
-        workingDir = os.getcwd()
-        print("current working directory: " + workingDir)
-        fileDeposit = os.path.join(workingDir, 'TWDep', file_name)
-        print(fileDeposit)
+    workingDir = os.getcwd()
+    print("current working directory: " + workingDir)
+    fileDeposit = os.path.join(workingDir, 'TWDep', file_name)
+    print(fileDeposit)
 
 
     # download started
-        with open(fileDeposit, 'wb') as f:
-            for chunk in r.iter_content(chunk_size = 1024*1024):
-                if chunk:
-                    f.write(chunk)
-                    print("Downloaded " + file_name)
+    with open(fileDeposit, 'wb') as f:
+        for chunk in r.iter_content(chunk_size = 1024*1024):
+            if chunk:
+                f.write(chunk)
+                print("Downloaded " + file_name)
 
-        return
+    return
 
 # ebb: Basically the line below initiates the whole program, sets it in motion.
 # On the line if __name__ == "__main__": ,
