@@ -7,5 +7,5 @@ In my experiences running the python with my text collection, I was able to poin
 - In clusters with Waters, it is noticeable that it always relates to his creative projects. Terms such as "wall" appear very frequently with Waters, because it was his idea and the album that he retained the rights to. The most of these interviews probably involve that.
 - Other interesting clusters involve keywords such as "syd," specific years, as well as places like "london." These are most likely relating to the story of Syd Barrett, a founding member who had to depart the band due to mental illness. If Waters, Gilmour, and Barrett, all show up in the same cluster, which they do, it probably relates to the idea that the story of Barrett and the beginning of Pink Floyd coincide and that the band members grieve the loss of their friend.
 
-The html can be found here: [a relative link](topicModel_Visualization.html)
+The html can be found [here](docs/topicModel_Visualization.html)
 
