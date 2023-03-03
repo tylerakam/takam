@@ -1,0 +1,10 @@
+1. I started  by cleaning up the html editor by getting rid of the html doctype and replacing it with nothing to delete it
+2. I replaced <html> with <root> and did the same for the close tags
+3. I removed the <head> beginning and end tags, along with any spaces, using "  " and replacing with nothing.
+4. I looked for all &, noticed that html uses "&gt;" for greater than symbols, just like xml. I then searched for "& " so that I can find any occurence of an ampersand with a space after it. I found zero occurances.
+5. Considering there are < and > used for tagginmg, it was safe to assume there are no instances of loose ones, else the html would not have been well-formed.
+6. I used "<link.+" to match on every link, then removed the line to fit it for xml. I did the same with "<meta.+"
+7. I used "\[.+" to find every line with brackets used to describe a character's actions, and replaced with <desc>\0</desc> to preserve the line and add markup to categorize them.
+8. i'm trying to match on all <a> elements, but I cannot seem to. My attempts include variations of "<a.+>" along with mixing "$" in to try and match up to the > of the first half of the wrap. I know I can remove the end tag by searching for it directly, but each link is different for every timestamp, so I'm stuck on trying to capture up until a specific key.
+9. I used "bojack horseman?" and replaced with <ch name="\0">\0<ch>. It found instances of only bojack and bojack horseman in full, I believe. This would work with every other character mentioned, assuming I can find every single one.
+10. I searched for "\{\\an8\}" and replaced with <subtitle>\0</subtitle> to ensnare all of the subtitle elements. (it took me a minute to realize that a backslash needs its own backslash)

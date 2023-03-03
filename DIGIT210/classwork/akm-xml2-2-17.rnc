@@ -1,0 +1,28 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = xml
+
+xml = element xml{text, head, note, serv, ingHead, dir}
+head = element head{mixed{title, pers, pub, date}}
+note = element note{text, l*}
+
+n = attribute n{xsd:int}
+serv = element serv{text}
+ingHead = element ingHead{sub*, l*}
+dir = element dir{sub, p}
+
+title = element title{text}
+pers = element pers{text}
+pub = element pub{text}
+date = element date{text, when}
+when = attribute when{xsd:date}
+
+l = element l{n?, mixed{(tool | pers | pub | ing)*}}
+sub = element sub{text}
+p = element p{mixed{(act | ing | tool)*}}
+act = element act{text}
+ing = element ing{text, type}
+
+type = attribute type{list{("WBflour" | "WRflour" | "WWflour" | "yeast" | "salt" | "cid" | "water" | "col" | "towel" | "eIron" | "cIron" | "cloth")+}}
+
+tool = element tool {text, type*}

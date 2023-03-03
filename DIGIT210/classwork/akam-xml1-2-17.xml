@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="akm-xml2-2-17.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+    <head><title>Country Loaf (Pain de Campagne)</title>
+        <pers>Deb Lindsey</pers> for <pub>The Washington Post</pub>
+        <date when="2014-09-10">SEP 10, 2014</date></head>
+    <note>
+        <l n="1"><pub>Washington</pub> author <pers>Sam Fromartz</pers> has been making sourdough
+            variations of this yeast bread for years. Here, he adds fermented cider for flavor. A
+            mild beer may be substituted; an IPA would be too bitter. The loaf is sized to last a
+            few days.</l>
+        <l n="2">The optional tablespoon of water is to compensate for the variable absorption of
+            the rye and whole-wheat flours.</l>
+        <l n="3">You'll need a <tool type="col">colander</tool>, a <tool type="cloth">pastry
+                cloth</tool> or <tool type="towel">clean dish towel</tool> and a <tool type="cIron"
+                >covered cast-iron</tool> or <tool type="eIron">enameled cast-iron pot</tool>.</l>
+        <l n="4">Make Ahead: The dough needs four 20-minute rests, plus an 8-to-24-hour stay in the
+            refrigerator and a final 1 1/2-hour rise.</l>
+        <l n="5">Storage Notes: Store the cooled loaf in a <tool>paper bag</tool> for a day, and
+            store in a <tool>plastic bag</tool> for a few days after that. Do not refrigerate.</l>
+    </note>
+    <serv>SERVINGS: Tested size: 10-12 servings; makes one 11-ounce loaf 10 to 12 slices</serv>
+
+    <ingHead>
+        <sub>INGREDIENTS</sub>
+        <l n="6">
+            <ing type="WBflour">1 1/4 cups (160 grams) white bread flour, plus more for
+                dusting</ing>
+        </l>
+        <l><ing type="WWflour">1/4 cup (38 grams) stone-ground whole-wheat flour</ing></l>
+        <l n="7">
+            <ing type="WRflour">1/4 cup (32 grams) stone-ground whole rye flour</ing>
+        </l>
+        <l n="8">
+            <ing type="yeast">1/2 teaspoon instant yeast or bread machine yeast</ing>
+        </l>
+        <l n="9">
+            <ing type="salt">1 teaspoon table salt</ing>
+        </l>
+        <l n="10">
+            <ing type="cid">1/4 cup (55 grams) dry fermented cider (may substitute Pilsener beer;
+                see headnote)</ing>
+        </l>
+        <l n="11">
+            <ing type="water">1/2 cup (120 grams) lukewarm water (80 degrees), plus an optional 1
+                tablespoon</ing>
+        </l>
+    </ingHead>
+    <dir>
+        <sub>DIRECTIONS</sub>
+        <p><act>Whisk</act> together the <ing type="WBflour WWflour WRflour">flours</ing>, <ing
+                type="yeast">yeast</ing> and <ing type="salt">salt</ing> in a mixing bowl. Combine
+            the <ing type="cid">cider</ing> and <ing type="water">water</ing> in a <tool>liquid
+                measuring cup</tool>. <act>Add</act> the liquid to the <ing
+                type="WBflour WWflour WRflour">flour</ing> mixture; use a spatula or bench scraper
+            or your hand moistened with water to blend them for about a minute. The dough should be
+            shaggy yet cohesive. Cover the bowl with a towel; let the dough rest for 20 minutes.
+                <act>Moisten</act> your kneading hand. If the dough seems stiff, add the optional
+            tablespoon of <ing type="water">water</ing>. Stretch one edge of the dough (still in the
+            bowl), then <act>press</act> it into the center of the <tool>bowl</tool>.
+                <act>Repeat</act> this about a dozen times, moving clockwise to catch all sides of
+            the dough. (This should take 1 or 2 minutes.) <act>Turn</act> the dough over so the
+            seams are on the bottom. Cover and let rest for 20 minutes. Repeat the clockwise
+            stretching and folding two more times, with 20-minute rests after each. <act>Cover</act>
+            and refrigerate at least 8 hours and up to 24 hours. The dough should have doubled. If
+            it hasn't, leave it on the counter until it does. Lightly <ing
+                type="WBflour WWflour WRflour">flour</ing> a work surface. Use a <tool type="cloth"
+                >pastry cloth</tool> or <tool type="towel">clean dish towel</tool> to line a <tool
+                type="col">round colander</tool>. Dust the cloth with <ing
+                type="WBflour WWflour WRflour">flour</ing>. <act>Transfer</act> the dough to the
+            floured work surface. Fold the edges toward the center to create a round shape, turning
+            it over so the seams are on the bottom. Let it rest for 5 minutes, then transfer to the
+            colander, seam side up. Cover with a towel and let the dough rise for 1 1/2 hours.
+            Thirty minutes before baking, place a <tool>cast-iron Dutch oven</tool> (lid on) or
+                <tool type="eIron">enameled cast-iron pot</tool> with a lid (on) in the
+                <tool>oven</tool>; <act>preheat</act> to 475 degrees. Carefully <act>remove</act>
+            the hot <tool type="eIron">pot</tool> from the <tool>oven</tool>. <act>Turn</act> the
+            dough out onto the counter so the seams are on the bottom. Use <tool>kitchen
+                scissors</tool> to make 8 snips on the top of the dough in an evenly spaced spoke
+            pattern, each about 1/4-inch deep. <act>Lift</act> the dough and carefully
+                <act>drop</act> it into the hot <tool type="eIron">pot</tool>. Immediately
+                <act>cover</act> with the hot lid. <act>Bake</act> for 30 minutes, then
+                <act>reduce</act> the heat to 450 degrees. <act>Uncover</act> and <act>bake</act>
+            for 8 to 10 minutes or until the crust is dark brown. Try to minimize the amount of time
+            the <tool>oven</tool> door is open. The bread is done when its internal temperature
+            registers 205 degrees on an <tool>instant-read thermometer</tool> and the loaf sounds
+            hollow when knocked on the underside. <act>Transfer</act> the loaf to a wire rack to
+            cool for at least 1 hour before cutting.</p>
+    </dir>
+</xml>

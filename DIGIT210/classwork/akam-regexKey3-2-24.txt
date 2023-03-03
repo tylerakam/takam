@@ -1,0 +1,7 @@
+1. I started with checking for ampersands and less than and greater than symbols.
+2. I deleted every space by finding ^ + and replacing with nothing
+3. I found every double line using \n\n and replaced with \n
+4. I categorized every line as a line using .+ and replacing with <line>\0</line>
+5. I used (<line>)([XCLVI]+)(</line>) and replaced with </sonnet> and on the new line underneath
+<sonnet number="\2">\2
+6. In my cleanup I added root tags and fixed the extra end sonnet tags. I had well-formed xml.

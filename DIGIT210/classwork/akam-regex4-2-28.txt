@@ -1,0 +1,8 @@
+1. I did the ampersand check along with the greater than and less then symbols.
+2. I used .+ to find every blank line and replace with <p>\0</p>
+3. I used <p>(CHAPTER [IXCVL]+)</p> to find every chapter and replaced with <heading>\1</heading>
+4. I used <heading>(CHAPTER [IXCVL]+)</heading> and replaced with </chapter>
+<chapter>\1 using a return in my replace window
+5. I matched "(.+?)" and replaced with "<quote>\1</quote>" (I kept the quotation marks outside, but I understand that they can aren't apart of the inner tag.)
+6. Final pre-xml changes including making a root element and removing the first </chapter> and putting one at the end
+7. Used \d+\$+[A-Z][a-z]+

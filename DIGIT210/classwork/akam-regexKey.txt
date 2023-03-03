@@ -1,0 +1,4 @@
+RegEx Expressions used:
+* "^.+$" - used to find all lines, then replaced with "* \0" to make bullet points
+* "\n\n+" used to find the empty lines, replaced with "\n"
+* "^\d.+$" - used to look at the lines starting with numbers. i used this to make a bulleted list of ingredients
