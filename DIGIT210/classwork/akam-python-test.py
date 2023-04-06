@@ -65,24 +65,26 @@ def readTextFiles(filepath):
         # TSA: I'm gonna try my itemTypes
         string = str(xpath)
         # ebb: Doing some regex replacements to clean up punctuation issues that are getting in the way of the NER tagger
-        cleanedUp = regex.sub("_", " ", string)
-        cleanedUp = regex.sub("'([A-Z])]", " \1", cleanedUp)
-        cleanedUp = regex.sub("([.!?;'`])([A-Z'`]])", "\1 \2", cleanedUp)
-        # send to spaCy to collect nlp data on the big string
-        tokens = nlp(cleanedUp)
+        # cleanedUp = regex.sub("_", " ", string)
+        # cleanedUp = regex.sub(r"'([A-Z])]", r" \1", cleanedUp)
+        # cleanedUp = regex.sub(r"([.!?;'`])([A-Z'`]])", r"\1 \2", cleanedUp)
+        # # send to spaCy to collect nlp data on the big string
+        tokens = nlp(string)
         # tokens = nlp.pipe(cleanedUp, disable=["tagger", "parser", "attribute_ruler", "lemmatizer"])
 # TSA: I don't think I need this unless I have issues with punctuation.
         dictEntities = entitycollector(tokens)
         # ebb: The line above sends our nlp tokens to the named entity collector function.
         # THIS current function will receive and print a simple form of their output in the next line.
         print(f"{dictEntities=}")
+
         return (dictEntities)
 # 4. ebb: The function below returns a simple list of named entities.
 # But on the way, we're printing out as much we can from spaCy's classification of named entities:
 def entitycollector(tokens):
+    print("entityCollector is running")
     entities = {}
     for ent in sorted(tokens.ents):
-        if ent.label_ == "LOC" or ent.label_=="FAC" or ent.label_=="ORG" or ent.label_=="GPE" or ent.label_=="NORP":
+        if ent.label_ == "LOC" or ent.label_=="FAC" or ent.label_=="ORG" or ent.label_=="GPE" or ent.label_=="NORP" or ent.label_=="PERSON":
             if not regex.match(r"\w*[.,!?;:']\w*", ent.text):
         # ebb: The line helps experiment with different spaCy named entity classifiers, in combination if you like:
         # When using it, remember to indent the next lines for the for loop.
@@ -96,19 +98,13 @@ def entitycollector(tokens):
 # 2. and 5. ebb: The for loop below is working with your CollPath, and going through each file inside,
 # and sending it up to readTextFiles, where the nlp processing will happen.
 def assembleAllNames(souls):
-    AllNames = {}
-    for file in os.listdir(souls):
-        if file.endswith(".xml"):
-            filepath = f"{souls}/{file}"
 
-            eachFileDict = readTextFiles(filepath)
-            print(f"{eachFileDict=}")
-            AllNames.update(eachFileDict)
-            # ebb: The line above adds each file's new NLP data to the dictionary.
-    print(f"{AllNames=}")
-    AllNamesKeys = list(AllNames.keys())
+    soulsFileDict = readTextFiles(souls)
+    print(f"{soulsFileDict=}")
+
+    AllNamesKeys = list(soulsFileDict.keys())
     AllNamesKeys.sort()
-    SortedDict = {i: AllNames[i] for i in AllNamesKeys}
+    SortedDict = {i: soulsFileDict[i] for i in AllNamesKeys}
     print(f"{SortedDict=}")
     writeSortedEntries(SortedDict)
     # ebb: The function call in the above line will print the file to a useful output for review.
@@ -117,15 +113,14 @@ def assembleAllNames(souls):
     # output each entry as a string, line-by-line in the output file so the entries are easy
     # to read and review. We keep the dictionary as key-value pairs to send on to the xmlTagger function.
 
-    for file in os.listdir(souls):
-        if file.endswith(".xml"):
-            sourcePath = f"{souls}/{file}"
-            eachFileData = xmlTagger(sourcePath, SortedDict)
+
+    soulsFileData = xmlTagger(souls, SortedDict)
             # ebb: In the lines above, we send to the xmlTagger to add the nlp info as XML elements and attributes to the source files.
-    return eachFileData
+    return soulsFileData
     # Python functions don't really need to have return lines, but we can set the return to the function's most important output.
 
 def writeSortedEntries(dictionary):
+    print("writeSortedEntries is firing!")
     with open('distTrained-ORG-LOC-GPE-NORP.txt', 'w') as f:
         for key, value in dictionary.items():
             f.write(key + ' : ' + value + '\n')
@@ -133,12 +128,14 @@ def xmlTagger(sourcePath, SortedDict):
     with open(sourcePath, 'r', encoding='utf8') as f:
         readFile = f.read()
         stringFile = str(readFile)
+        print("XML TAGGER IS FIRING! ")
 
         # ebb: Get the current filename. We need to know it to write its new output version
-        filename = os.path.basename(f.name)
-        print(f"{filename=}")
-        targetFile = f"{souls}/{filename}"
+        # filename = os.path.basename(f.name)
+        # print(f"{filename=}")
+        targetFile = 'dsTestOutput.xml'
         print(f"{targetFile=}")
+
 
         # ebb: Work with stringFile variable to look for matches from the distinctNames set.
         for key, val in SortedDict.items():
