@@ -1,0 +1,44 @@
+1.
+ let $disneySongs := collection('/db/disneySongs/')//title
+for $d in $disneySongs
+return $d - returns the titles.
+
+2. 
+let $disneySongs := collection('/db/disneySongs/')
+    for $d in $disneySongs
+    let $line := $d//ln => count()
+    let $dt := $d//title
+return $line || " : " || $dt
+this gives me all of the titles and the numbers of lines for each.
+3. 
+let $disneySongs := collection('/db/disneySongs/')
+    for $d in $disneySongs
+    let $line := $d//ln => count()
+    let $dt := $d//title
+    let $dL := $d//song => string-length()
+return $dL
+I believe this is returning all of the string-lengths of the song elements...
+4. 
+order by $dL descending
+adding this to my loop gives me them in descending order
+5. 
+return $dL || " : " || $dt || " : " || $line
+this gives me, in descending order, length, titles, and line numbers
+6.
+let $disneySongs := collection('/db/disneySongs/')
+    for $d in $disneySongs
+    let $line := $d//ln => count()
+    let $dt := $d//title
+    let $dL := $d//song => string-length()
+    order by $dL descending
+let $songLengthsAll := $dAll
+        for $d in $disneySongs
+        let $length := $dL
+        return $length
+        let $maxSongLength := $dAll => max()
+return $dL || " : " || $dt || " : " || $line
+I get an error here for the let line for max song legnth. Not sure what the issue is or how to fix it. I assume once I get the right answer, I just duplicate the same for the min().
+7. 
+I believe I would use:
+where $dL = $maxSongLength
+and return $dL to get get the answer I'm looking for.

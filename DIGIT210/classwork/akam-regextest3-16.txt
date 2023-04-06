@@ -1,0 +1,7 @@
+1.
+a. When "dot matches all" is turned off, I get only the lines that are above new lines. When it is turned on, I get every line, starting from the begininng and following until the next new line. I want to have it turned on so that I may have all of the strings organized properly inside the <sp> element.
+b. \1 and \2 are referring to the two groups defined by parentheses in the find box. The \1 refers to the first defined one, while the \2 refers to the second one that is represented.
+c. Applied the replace with dot matches all on.
+2. I can use \((.*?)\) in the find window to find all the groups of parantheses. It doesn't matter if I have dot matches all selected or not, as it matches to the end paranthesis. If I use <stage>\0</stage> to replace, then I get the tags to properly wrap around what I need them to.
+3. If I use ([A-Z]+:) it matches on an all-caps section that ends with a colon. This allows me to replace the found section using <speak>\1</speak> to get speaker wrapped in a <speak> element. I could also change the grouping to put it before the colon, but I figured I might as well just keep it included. Did not have a dot. No dot matches all necessary.
+4. Manually added a root element at the top and bottom of the page! It was verified green!

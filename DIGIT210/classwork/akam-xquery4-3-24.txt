@@ -1,0 +1,24 @@
+<html>
+    <head><title>Voice Actors and Songs</title></head>
+    <body>
+    <h1>Voice Actors and Songs in the Disney Songs Collection</h1>
+    
+    <table>
+        <tr><th>No.</th><th>Voice Actor</th><th>List of Songs</th><th>Movie</th></tr>
+    {
+    let $disneySongs := collection('/db/disneySongs/')
+    let $va := $disneySongs//voiceActor ! normalize-space() => distinct-values() => sort()
+     for $c at $pos in $va
+       let $cTitles := $disneySongs[.//voiceActor ! normalize-space() = $c]//title ! normalize-space() => distinct-values() => sort() => string-join(', ')
+       let $cMovie := $disneySongs[.//voiceActor ! normalize-space() = $c]//movie ! normalize-space() => distinct-values() => sort() => string-join(', ')
+    return 
+       <tr>
+          <td>{$pos}</td><td>{$c}</td><td>{$cTitles}</td><td>{$cMovie}</td>
+               
+        </tr> 
+   }
+   </table>
+</body>
+</html>
+
+I was able to test this using the w3 schools html preview and got this to work! I made a table that shows the voice actor, the songs they were featured in, and the movie that the songs were from. This allows me to see who was associated with what song and movie!

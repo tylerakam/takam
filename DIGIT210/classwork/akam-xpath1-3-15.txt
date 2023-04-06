@@ -1,0 +1,18 @@
+1. 
+The Tempest, like a typical Shakespearean play, contains five acts, each of which contains scenes. Both acts and scenes are encoded as division (<div>) elements. Scroll into the document far enough so you can see the first act and the first scene to see how this is coded. Now, try writing XPath expressions to answer the following questions:
+a) They are divs with divs inside, and to go further, there are heads that have the acts and scenes inside.
+b) //body/div
+c) //body/div/div
+d) //body/div[2]/div
+2. 
+Stage directions (<stage> occur in a variety of places in this XML file.
+a) //stage.
+b) //body/div[3]//stage
+c) //body//l//stage
+d) //body//sp//stage
+e) From examining the results, I only seem to find them present in sp, l, or under the div elements. //body//stage
+f) //body//div/stage gives me 22 items and I checked and dound that sp elements that had a stage element were not highlighted
+3. 
+Let's take a look at some attributes in this document. The @ symbol in XPath indicates the attribute axis.
+a) //body//sp/@who gave me the whole who term, so I believe that works!
+b) //sp[@who="Prospero"] - I get 114 results for Prospero, I believe this is correct. Miranda has 50 results.

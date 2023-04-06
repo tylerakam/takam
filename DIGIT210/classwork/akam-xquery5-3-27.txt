@@ -1,0 +1,59 @@
+declare variable $ThisFileContent:=
+<html>
+    <head><title>Blues Songs</title></head>
+    <body>
+    <h1>Blues Songs</h1>
+    
+    <table>
+        <tr><th>No.</th><th>Song</th><th>Artist</th><th>Info</th></tr>
+    {
+    let $blues := collection('/db/blues')
+    let $title := $blues//title ! normalize-space() => distinct-values() => sort()
+     for $c at $pos in $title
+       let $cArtist := $blues[.//title ! normalize-space() = $c]//artist ! normalize-space() => distinct-values() => sort() => string-join(', ')
+       let $cSongInfo := $blues[.//title ! normalize-space() = $c]//songInfo ! normalize-space() => distinct-values() => sort() => string-join(', ')
+    return 
+       <tr>
+          <td>{$pos}</td><td>{$c}</td><td>{$cArtist}</td><td>{$cSongInfo}</td>
+               
+        </tr> 
+   }
+   </table>
+</body>
+</html>;
+let $filename := "bluesArtistTable.html"
+let $doc-db-uri := xmldb:store("/db/myOutput", $filename, $ThisFileContent, "html")
+return $doc-db-uri
+
+(: I saved the above in case I needed it, as the first time I worked on this I got it to output my table:)
+
+xquery version "3.1";
+declare variable $ThisFileContent:=
+<html>
+    <head><title>Blues Songs</title></head>
+    <body>
+    <h1>Blues Songs</h1>
+    
+    <table>
+        <tr><th>No.</th><th>Song</th><th>Artist</th><th>Info</th></tr>
+    {
+    let $blues := collection('/db/blues')
+    let $title := $blues//title ! normalize-space() => distinct-values() => sort()
+     for $c at $pos in $title
+       let $cArtist := $blues[.//title ! normalize-space() = $c]//artist ! normalize-space() => distinct-values() => sort() => string-join(', ')
+       let $cSongInfo := $blues[.//title ! normalize-space() = $c]//songInfo ! normalize-space() => distinct-values() => sort() => string-join(', ')
+    return 
+       <tr>
+          <td>{$pos}</td><td>{$c}</td><td>{$cArtist}</td><td>{$cSongInfo}</td>
+               
+        </tr> 
+   }
+   </table>
+</body>
+</html>;
+let $filename := "akam-bluesArtistTable.html"
+let $doc-db-uri := xmldb:store("/db/2023-Class-Examples/", $filename, $ThisFileContent, "html")
+return $doc-db-uri
+output at :http://newtfire.org:8338/exist/rest/db/2023-Class-Examples//akam-bluesArtistTable.html
+
+I was unable to get the output line to work. I'm not sure what the error is. Although I do believe I understand the process here and what I'm supposed to be doing.

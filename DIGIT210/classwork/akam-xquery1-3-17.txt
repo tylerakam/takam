@@ -1,0 +1,10 @@
+xquery version "3.1";
+declare default element namespace "http://www.tei-c.org/ns/1.0";
+
+1. collection('/db/apps/shakespeare/data/')//titleStmt/title - gives me the whole title element
+2. collection('/db/apps/shakespeare/data/')//titleStmt/title ! text() - returns only the text of the titles
+3. collection('/db/apps/shakespeare/data/')/TEI - gives me all of the TEI element
+4. collection('/db/apps/shakespeare/data/')/TEI[.//sp[speaker="Falstaff"]] - I bleieve this is what returns the plays, but the arrows on Exide don't seem to toggel between the different plays...
+5. collection('/db/apps/shakespeare/data/')/TEI[.//sp[speaker="Falstaff"]]//titleStmt/title - this returns the full title statements of each recently found play where falstaff appears
+6. collection('/db/apps/shakespeare/data/')/TEI[.//sp[speaker="Falstaff"]]//titleStmt/title ! string() - the difference between this and text is that string includes the quotation marks and other symbols or numbers that appear
+7. collection('/db/apps/shakespeare/data/')/TEI[.//sp[speaker="Falstaff"]]/speaker//sp[@who="Falstaff"] => count() - I tried this and a few variations, but cannot quite get the results I am looking for. I know I properly got the count function to work at the very least. The 1 result got appeared as a counted function.

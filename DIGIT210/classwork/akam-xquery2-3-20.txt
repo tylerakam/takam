@@ -1,0 +1,31 @@
+1.
+a. let $shakes := collection('/db/apps/shakespeare/data/')//TEI - nothing without a return line
+b. 
+let $shakes := collection('/db/apps/shakespeare/data/')//TEI
+let $speak := $shakes//speaker
+return $speak => count() - I returned 31054 results!
+c.
+let $distSpeak := $speak => distinct-values()
+return $distSpeak - I'm getting all unique speakers, but some look like they aren't speakers. "some" was actually a speaker according to this.
+d. 
+let $distSpeak := $speak => distinct-values()
+return $distSpeak => count() - I returned 966 values.
+e. 
+let $distSpeak := $speak => distinct-values()
+for $p in $shakes
+    let $dsp := $p//speaker => distinct-values()
+    let $title := $p//titleStmt/title
+    let $dspCount := $dsp => count()
+    where $dspCount > 50
+return ($title || " : " || $dspCount)
+I returned the titles of plays with greater than 50 speakers!
+2. 
+for $p in $shakes
+    let $dsp := $p//speaker => distinct-values()
+    let $title := $p//titleStmt/title
+    let $dspCount := $dsp => count()
+    let $uri := $p => base-uri()
+    where $dspCount > 50
+return ($title || " : " || $dspCount || " : " || $uri)
+
+I got the base uri to appear, and it looks like we already got the text to not have its title tag wrapped, even though we didn't send it to a string or text function...
