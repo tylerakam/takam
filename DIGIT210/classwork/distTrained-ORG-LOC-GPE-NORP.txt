@@ -1,0 +1,277 @@
+""""Robe : PERSON
+""Abyss : PERSON
+""An orange ring : PERSON
+""Armor : PERSON
+""Chainmail : PERSON
+""Coat : PERSON
+""Mask : PERSON
+""Miracle : ORG
+""Moss : PERSON
+""Old ring : PERSON
+""The : ORG
+"Coin : ORG
+"Titanite shard : PERSON
++5 std wpn : ORG
+A Fire Keeper's : ORG
+Abyss : FAC
+Allfather Lloyd : PERSON
+Alvina : PERSON
+Andre of Astora : PERSON
+Anor Londo : GPE
+Archive Tower : FAC
+Ariamis : NORP
+Arstor : PERSON
+Artorias : PERSON
+Artorias the Abysswalker : ORG
+Ash Lake : GPE
+Astora : PERSON
+Attune : PERSON
+Balder : PERSON
+Batwing : NORP
+Beatrice : ORG
+Big Hat : ORG
+Big Hat Logan : ORG
+Binoculars : PERSON
+Bishop Havel : ORG
+Black Iron Tarkus : ORG
+Blade Ciaran : PERSON
+Blades of the Darkmoon : ORG
+Blighttown : ORG
+Burg : PERSON
+Caduceus : ORG
+Caestus : ORG
+Capra : PERSON
+Carim : PERSON
+Carmina : ORG
+Catarina : PERSON
+Channelers : GPE
+Ciaran : PERSON
+Cloak : PERSON
+Combustion : ORG
+Crest Key : LOC
+Dark Fog : PERSON
+Dark Orb : PERSON
+Dark Orbs : PERSON
+Darkmoon : PERSON
+Darkmoon Blade : ORG
+Darkmoon Gwyndolin : PERSON
+Darkwraith : ORG
+Darkwraith Kirk : PERSON
+Darkwraiths : PERSON
+Daughter of Chaos : ORG
+Deflects : PERSON
+Dragon School : ORG
+Dragon Torso Stone : PERSON
+Dragonslayer Knight : PERSON
+Drake Valley : LOC
+Droops : PERSON
+Each Fire Keeper : ORG
+Earl of Carim : PERSON
+East : LOC
+Eastern : NORP
+Eastern Land : LOC
+Egg Vermifuge : ORG
+Eidas : ORG
+Eingyi : ORG
+Elizabeth : PERSON
+Equip : ORG
+Estus : ORG
+Estus Flasks : ORG
+Fang Boar : PERSON
+Fina : ORG
+Fire : ORG
+Fire Keeper : ORG
+Firelink Shrine : ORG
+Force : ORG
+Giant Gravelord swords jut : PERSON
+Giants : ORG
+GlovesWaistcloth : PERSON
+Goddess Velka : ORG
+Gough : PERSON
+Gradual HP : ORG
+Grant : PERSON
+Gravelord : PERSON
+Gravelord Nito : PERSON
+Great Swamp : FAC
+Greatarchers : ORG
+Greatbow : PERSON
+Greatbow Attack : PERSON
+Greatshield : PERSON
+Greatshield Attack : PERSON
+Guardian : ORG
+Gwyn : PERSON
+Gwyndolin : GPE
+Gwynevere : PERSON
+HP : ORG
+Halberd : ORG
+Havel : GPE
+Havel the Rock : ORG
+Hawkeye Gough : PERSON
+Heavy Soul Arrow : ORG
+Hidden Body : ORG
+Hollow : PERSON
+Hollowing : GPE
+Hunter : PERSON
+Hush : PERSON
+Iaijutsu : ORG
+Imbued : PERSON
+Ivory Talismans : NORP
+Izalith : PERSON
+Kaathe : PERSON
+Kalameet : PERSON
+Katana : ORG
+Keeper : ORG
+Kindling : GPE
+Kirk : ORG
+Knight : PERSON
+Knight Artorias : PERSON
+Knight Artorias's : PERSON
+Knight Berenike : PERSON
+Knight Berenike's : PERSON
+Knight King Rendal : ORG
+Knights : ORG
+Lautrec : PERSON
+Lautrec the Embraced : PERSON
+Leeroy : PERSON
+Legendary Slabs : ORG
+Lifedrain : FAC
+Lloyd : PERSON
+Logan : PERSON
+Lordan : PERSON
+Lordran : GPE
+Lucerne : GPE
+Magic Weapon : ORG
+Manus : PERSON
+Marcasite : PERSON
+Marvellous Chester : PERSON
+Moon : PERSON
+Moonlight Arrows : PERSON
+Moonlight Butterfly : PERSON
+Nata : NORP
+New Londo : GPE
+New Londo Sacrifice : GPE
+New Londo's : GPE
+Nito : ORG
+North : LOC
+North Undead Asylum : FAC
+Oolacile : FAC
+Ornstein : PERSON
+Paladin : PERSON
+Parry : PERSON
+Pharis : PERSON
+Pickaxe : PERSON
+Pinwheel : ORG
+Priscilla : PERSON
+Priscilla the Crossbreed : ORG
+Pyromancer : PERSON
+Pyromancers : PERSON
+Pyromancy : PERSON
+Pyromancy Flame Attack : PERSON
+Quelaag : ORG
+Quelana : PERSON
+Repair Powder : ORG
+Reprisal : ORG
+Ricard : PERSON
+Rubbish : PERSON
+Salaman : PERSON
+Sanctuary : LOC
+Sanctus : ORG
+Seath the Scaleless : ORG
+Shields : PERSON
+Shiva : PERSON
+Sif : PERSON
+Sin Annul : PERSON
+Slab : ORG
+Slash Giant : PERSON
+Slash Halberd : PERSON
+Smough : GPE
+Smough the Executioner : ORG
+Solaire : ORG
+Soul Arrow : ORG
+Stone : PERSON
+Sun : ORG
+Sunlight Gwyn : PERSON
+Tarkus : PERSON
+The Archive Tower : FAC
+The Black Eye : ORG
+The Crescent Axe : ORG
+The Demon Firesage : ORG
+The Estus Flasks : ORG
+The Hawk Ring : ORG
+The Hornet Ring : ORG
+The Leo Ring : PERSON
+The Purging Stone : ORG
+The Red Sign Soapstone : ORG
+The Silver Knights : ORG
+The Stone Knight : ORG
+The Undead Asylum : ORG
+The Wolf Ring : ORG
+This Lord Soul : PERSON
+Thorolund : PERSON
+Thrust Cross : ORG
+Titanite : ORG
+Travel Gear / HeadNo Travel Gear / BodyNo Travel Gear : ORG
+Uchigatana : PERSON
+Vamos : ORG
+Velka : ORG
+Velka the Goddess of Sin : ORG
+Vinheim : PERSON
+Vinheim Dragon School : ORG
+Waistcloth : PERSON
+Warrior : ORG
+Yulva : ORG
+Zena : ORG
+\I'm sorry\ : ORG
+a Fire Keeper : ORG
+an""Transform : ORG
+bloodshield : PERSON
+burg : GPE
+drake : PERSON
+greataxe : PERSON
+greatshield : GPE
+knightsword : ORG
+pyromancies : GPE
+the Ash Maiden : ORG
+the Black Eye : ORG
+the Black Knights : ORG
+the Capra Demon : PERSON
+the Dark Sun : ORG
+the Dark of Manus : ORG
+the Darkmoon Knightess : ORG
+the Darkroot Garden : FAC
+the Daughters of Chaos : ORG
+the Daughters of Chaos. : ORG
+the Dragon School : ORG
+the Dragonslayer Greatbow : PERSON
+the Fire Keeper : ORG
+the Fire Keeper at Firelink Shrine : ORG
+the Firelink Altar : LOC
+the Four Knights : ORG
+the Giant Catacombs : FAC
+the Gods, : GPE
+the Great Swamp : LOC
+the Knights Berenike : ORG
+the Knights of Berenike : ORG
+the Knights of Catarina : ORG
+the Legendary Slabs : FAC
+the North Undead Asylum : ORG
+the Old Church : FAC
+the Regal Archives : ORG
+the Sanctuary Guardian : ORG
+the Sealers of New Londo : ORG
+the Silver Knights : ORG
+the Silver Knights of Anor Londo : ORG
+the Stone Knight : ORG
+the Tin Crystallization Catalyst : ORG
+the Undead Asylum : FAC
+the Undead Burg : FAC
+the Undead Church : ORG
+the Vinheim Dragon School : FAC
+the Vinheim sorcerers : ORG
+the Way of White : ORG
+the White Sign Soapstone : ORG
+the Witch of Izalith : ORG
+the Xanthous King Jeremiah : PERSON
+the white winged lion sanctuary watchkeeper : ORG
+wolf Sif : PERSON
+wpn : ORG
