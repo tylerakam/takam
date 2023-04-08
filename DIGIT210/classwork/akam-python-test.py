@@ -13,6 +13,9 @@ from saxonche import PySaxonProcessor
 
 # nlp = spacy.cli.download("en_core_web_lg")
 nlp = spacy.load('en_core_web_lg')
+
+souls = 'dsexcel-text-test.xml'
+
 def readTextFiles(filepath):
     readFile = filepath.read()
     # print(readFile)
@@ -22,7 +25,7 @@ def readTextFiles(filepath):
     tokens = nlp(stringFile)
     # print(tokens)
     listEntities = entitycollector(tokens)
-    # print(listEntities)
+    print(listEntities)
 def entitycollector(tokens):
     entities = []
     for entity in tokens.ents:
@@ -33,8 +36,7 @@ def entitycollector(tokens):
         entities.append(entity.text)
     return entities
     # print(entities)
-souls = open('dsexcel-text-test.xml', 'r', encoding='utf8')
-readTextFiles(souls)
+
 # ebb: After reading the sorted dictionary output, we know spaCy is making some mistakes.
 # So, here let's try adding an EntityRuler to customize spaCy's classification. We need
 # to configure this BEFORE we send the tokens off to nlp() for processing.
@@ -46,16 +48,16 @@ readTextFiles(souls)
 
 config = {"spans_key": None, "annotate_ents": True, "overwrite": True, "validate": True}
 ruler = nlp.add_pipe("span_ruler", before="ner", config=config)
-def readTextFiles(filepath):
-    # with open(filepath, 'r', encoding='utf8') as f:
+def readTextFiles(souls):
+    # with open(souls, 'r', encoding='utf8') as f:
     with PySaxonProcessor(license=False) as proc:
-        xml = open(filepath, encoding='utf-8').read()
+        xml = open(souls, encoding='utf-8').read()
         # ebb: Here we changed to the Saxon processor to read files with XPath.
         # From here on, we change how we formulate the string that Python will send to NLP.
         xp = proc.new_xpath_processor()
         node = proc.parse_xml(xml_text=xml)
         xp.set_context(xdm_item=node)
-        xpath = xp.evaluate('//itemType ! normalize-space() => string-join()')
+        xpath = xp.evaluate('//desc ! normalize-space() => string-join()')
         # ebb: Let's get the string() value of all the <p> elements that are descendants of <book>.
         # The XPath function normalize-space() gets the string value and removes extra spaces.
         # That way we avoid the prologue, preface material.
@@ -64,6 +66,7 @@ def readTextFiles(filepath):
         # string = xpath.__str__()
         # TSA: I'm gonna try my itemTypes
         string = str(xpath)
+        print(string)
         # ebb: Doing some regex replacements to clean up punctuation issues that are getting in the way of the NER tagger
         # cleanedUp = regex.sub("_", " ", string)
         # cleanedUp = regex.sub(r"'([A-Z])]", r" \1", cleanedUp)
@@ -98,7 +101,6 @@ def entitycollector(tokens):
 # 2. and 5. ebb: The for loop below is working with your CollPath, and going through each file inside,
 # and sending it up to readTextFiles, where the nlp processing will happen.
 def assembleAllNames(souls):
-
     soulsFileDict = readTextFiles(souls)
     print(f"{soulsFileDict=}")
 
@@ -148,7 +150,8 @@ def xmlTagger(sourcePath, SortedDict):
         with open(targetFile, 'w') as f:
             f.write(stringFile)
 
-    assembleAllNames(souls)
+
+assembleAllNames(souls)
 
     # ebb: The functions are all initiated here now.
     # This just delivers the collection path up to the first function in the sequence.
