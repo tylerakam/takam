@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="javaTesting.js"></script>
     </head>
     <body>
         <div class="page">
@@ -36,10 +37,12 @@
                     </li>
                 </ul>
             </nav>
-            <img src="Pics/site%20title%20smaller.png" alt="Tyler's Page graphic" />
+            
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Pics/site%20title%20smaller.png" alt="Tyler's Page graphic" />
             <section class="quickinfo">
                 <h1>Quick Info</h1>
-                <p>Check out my YouTube channel: <a
+               
+                <p id="sub" onclick="ad()">Check out my YouTube channel: <a
                         href="https://www.youtube.com/channel/UC9sYaoBw10McN-ey-6ScE5g"
                         >Takamator</a></p>
                 <p>Check out the projects I'm involved in outside of school: <a
