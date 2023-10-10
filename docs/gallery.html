@@ -3,12 +3,11 @@
     <head>
         <title>Gallery</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="gallery.js"></script>
     </head>
     <body>
-        <div class="page">
         <nav>
-           
-               <ul>
+            <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -18,46 +17,89 @@
                 <li>
                     <a href="gallery.html">Gallery</a>
                 </li>
-                   <li><a href="reflection.html">Reflection</a></li>
-                   <li>
-                       <a href="corpus.html">Corpus</a>
-                   </li>
-                   <li>
-                       <a href="timemapper.html">Time Mapper</a>
-                   </li>
-                   <li>
-                       <a href="Zordak.html">Zordak</a>
-                   </li>
+                <li>
+                    <a href="reflection.html">Reflection</a>
+                </li>
+                <li>
+                    <a href="corpus.html">Corpus</a>
+                </li>
+                <li>
+                    <a href="timemapper.html">Time Mapper</a>
+                </li>
+                <li>
+                    <a href="Zordak.html">Zordak</a>
+                </li>
                 <li>
                     <a href="about.html">About</a>
                 </li>
             </ul>
-           
         </nav>
-       <section class="galHead">
-        <h1>Gallery</h1>
-       
-        <p>Here is where my projects will be visible. This will range from short films, photos,
-            artwork, game development, and more!</p>
-       </section>
+     
+        <section class="galHead">
+            <h3>Links</h3>
+        
+            <figure>
+                <figcaption>Most of my works are in the form of YouTube videos, found on my personal YouTube channel, Takamator, and on the Chiefofbricks channel, where I work with fellow filmmakers and friends to make short films and projects. A majority of my focus goes to content on the Chiefofbricks channel, while the content on Takamator serves as a way to categorize school and solo projects.
+                    
+                    The projects made on Chiefofbricks are a team effort, and my skills are utilized differently each time. Some videos are directed, edited, or conceived by me, but each video does have my own creative input if my name is credited in any way.
+                    
+                </figcaption>
+                <form action="https://www.youtube.com/channel/UC9sYaoBw10McN-ey-6ScE5g">
+                    <input type="submit" value="View my work on my personal YouTube Channel" />
+                </form>
+                <form action="https://www.youtube.com/@Chiefofbricks">
+                    <input type="submit" value="View my work on the Chiefofbricks YouTube Channel" />
+                </form>
+            </figure>
+            <h1>Gallery</h1>
+            <ul class="check">
+                <li><input type="checkbox" value="pp" />Personal Projects</li>
+                <li><input type="checkbox" value="coll" />Collaborative</li>
+                <li><input type="checkbox" value="assign" />Assignment</li>
+            </ul>
+            <p>All of my notable work is visible here. It will be organized into schoolwork and personal projects.</p>
+            <h2>Personal Projects</h2>
+            <figure>
+                <span class="pp">Lost at Sea - Film</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/D6gQh2TbngQ?si=MB4cJ9KYigPtNdTZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>Lost at Sea is a personal film that was shot in 3 hours as part of a challenge issued by Joel Haver, an influential YouTube filmmaker.</figcaption>
+            </figure>
+            <figure>
+                <span class="coll">Say this when you're in trouble... - Short Film</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mLw8_0jW9mM?si=NlyMBTzEyPRZSrOm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>A project made in collaboration with Mason Reynolds and Dc Kent, along with the help of a few friends who played characters. This video specifically, has been edited by me, thumbnail by me.</figcaption>
+            </figure>
+            
+            <figure>
+                <span class="coll">It's a really strong prescription - Short Film</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rGLQr95xmz4?si=9y4hp_6WY7h9jONO" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>A project made in collaboration with Mason Reynolds and Dc Kent. This video specifically, has been edited by me, thumbnail by me.</figcaption>
+                
+            </figure>
+        </section>
         <section class="gallery">
             <h2>School Projects</h2>
             <div>
+                <figure>
+                    <span class="assign">Time After Time - 2D Animation</span>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fEeWO-7JaAc?si=-kLmFc0zTYoVEinz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <figcaption>Made as a project to demonstrate skills with 2D animation and puppet work, Time After Time is a short animation made using Adobe After Effects.</figcaption>
+                </figure>
+                
+                <figure>
+                    <span class="assign">A Fireside Chat - Rotoscope Animation</span>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NS1sqKvisoM"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption>This is a video made using a program called EbSynth. It is an example of
+                        rotoscoping. This project was made for ART 168 at Penn State
+                        Behrend.</figcaption>
+                </figure>
+            </div>
             
             <figure>
-                <p>A Fireside Chat - Rotoscope Animation</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NS1sqKvisoM"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption>This is a video made using a program called EbSynth. It is an example of
-                    rotoscoping. This project was made for ART 168 at Penn State
-                    Behrend.</figcaption>
-            </figure>
-           
-            
-            <figure>
-                <p>James Devours Earth - DC Kent (Official Music Video)</p>
+                <span class="assign">James Devours Earth - DC Kent (Official Music Video)</span>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/46YU9UhCpZI"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -67,33 +109,33 @@
                     a Blackmagic Camera. This music video was made for COMM 242 at Penn State
                     Behrend.</figcaption>
             </figure>
-          </div>
-           <div>
-           
-            <figure>
-                <p>Into the Metaverse - Short Film</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nGQGVHZnywo"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption>A short comedy sketch about what it's like to live in the Metaverse--the
-                    world of Virtual Reality. This was made as a project for Art 168 at Penn State
-                    Behrend.</figcaption>
-            </figure>
-         
             
-            <figure>
-                <p>Fortune Machine - Short Film</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cjfzaY3pdJo"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption>A man finds an ominous machine that gives out fortunes to those who use
-                    it. A collaborative effort made by myself and Noah Stachera for COMM 242 at Penn
-                    state Behrend.</figcaption>
-            </figure>
-           </div>
-            <p>Kachow: A Lightning McQueen Crocumentary - Documentary</p>
+            <div>
+                
+                <figure>
+                    <span class="assign">Into the Metaverse - Short Film</span>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nGQGVHZnywo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption>A short comedy sketch about what it's like to live in the Metaverse--the
+                        world of Virtual Reality. This was made as a project for Art 168 at Penn State
+                        Behrend.</figcaption>
+                </figure>
+                
+                
+                <figure>
+                    <span class="assign">Fortune Machine - Short Film</span>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cjfzaY3pdJo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption>A man finds an ominous machine that gives out fortunes to those who use
+                        it. A collaborative effort made by myself and Noah Stachera for COMM 242 at Penn
+                        state Behrend.</figcaption>
+                </figure>
+            </div>
+            <span class="assign">Kachow: A Lightning McQueen Crocumentary - Documentary</span>
             <figure>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dcuYJJWG0qg"
                     title="YouTube video player"
@@ -105,6 +147,6 @@
             </figure>
             
         </section>
-        </div>
+        
     </body>
 </html>
