@@ -275,6 +275,27 @@ body section.photoHead{
   background-size: auto;
 }
 a.license{
-    max-width: 20px;
+    max-width: 10px;
     width:50%;
+}
+figure span{
+    text-align:center;
+    font-size: 2em;
+    
+}
+ul.check {
+    font-size:2em;
+    text-align: left;
+}
+
+
+
+span.pp.on{
+    background-color:lime;
+}
+span.coll.on{
+    background-color:orange;
+}
+span.assign.on{
+    background-color:teal;
 }
