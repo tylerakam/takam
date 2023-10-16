@@ -299,3 +299,15 @@ span.coll.on{
 span.assign.on{
     background-color:teal;
 }
+        svg:hover #blue1{
+         transform:translate(0%, -8.5%)
+        }
+svg:hover #blue3{
+         transform:translate(0%, -9%)
+        }
+        svg:hover #blue2{
+            transform:translate(0%, -5%)
+        }
+         svg:hover #blue4{
+            transform:translate(0%, -5%)
+        }
