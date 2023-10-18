@@ -15,4 +15,6 @@ function normalImg(x) {
 
 //For this I tried a few things and made some adjustments to fit my code. I think what I did was kind of basic, but I want to keep experimenting and figure out what I can do. I think that's a limitation at the moment, as I don't know the full capabilities of JS''//
 
+/*To leave a comment like this, highlight the line and do ctrl, shift, forward slash*/
+
 // Akam-JS1-2023-10-05
